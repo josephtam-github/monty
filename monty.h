@@ -83,5 +83,6 @@ void (*func(char *tokens))(stack_t **stack, unsigned int num_line);
 int main(__attribute__((unused)) int argc, char **argv);
 void _pall(stack_t **stack, unsigned int num_line);
 void _push(stack_t **stack, unsigned int num_line);
-
+ssize_t getline(char **lineptr, size_t *n, FILE *stream);
+int dprintf(int fd, const char *format, ...);
 #endif
